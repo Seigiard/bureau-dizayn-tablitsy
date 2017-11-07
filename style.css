@@ -7,7 +7,7 @@ body {
     background: #fff;
     margin:0;
     padding:2rem 2rem 3rem 4rem;
-    font-family: sans-serif;
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
     font-size: 1em;
     max-width: 50em;
 }
@@ -96,7 +96,7 @@ table, table caption {
 
 .aligned-cell .left {
     display: inline-block;
-    width:3.6em;
+    width:3.55em;
     text-align: right;
 }
 
@@ -204,11 +204,6 @@ table, table caption {
 .step8 {
     padding: 2rem 0;
     margin-left: -1.5rem;
-}
-.step8 .aligned-cell .left {
-    display: inline-block;
-    width:3.35em;
-    text-align: right;
 }
 .step8 table {
     min-width: 39em;
