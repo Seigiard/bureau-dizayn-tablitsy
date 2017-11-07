@@ -202,7 +202,7 @@ table, table caption {
 
 
 .step8 {
-    padding-top: 2rem;
+    padding: 2rem 0;
     margin-left: -1.5rem;
 }
 .step8 .aligned-cell .left {
@@ -214,12 +214,12 @@ table, table caption {
     min-width: 39em;
     max-width: 39em;
     width: auto;
-    font-family: Open Sans, Lato;
+    font-family: Lato;
 }
 .step8 table caption {
     margin-bottom: 2.5rem;
     margin-left: 1.5rem;
-    font-size: 1.42em;
+    font-size: 1.4em;
     line-height: 1.2;
 }
 .step8 table th {
@@ -237,14 +237,17 @@ table, table caption {
     vertical-align: top;
 }
 
-.step8 table tr.substance:not(:first-child) td {
+.step8 table tr.substance:not(:first-child) td,
+.step8 table tr.guild:not(:first-child) td {
     padding-top: .8em;
 }
 
-.step8 table tr.substance:first-child td {
+.step8 table tr.substance:first-child td,
+.step8 table tr.guild:first-child td {
     padding-top: .6em;
 }
 
-.step8 table tr.substance td:first-child, .step8 table tr.substance td.ejection {
+.step8 table tr.substance td:first-child, .step8 table tr.substance td.ejection,
+.step8 table tr.guild td:first-child, .step8 table tr.guild td.ejection {
     font-weight: bold;
 }
