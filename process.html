@@ -1,0 +1,814 @@
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дизайн таблицы</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Шаг 1</h1>
+    <img src="table.png" alt="Начальная таблица" />
+    <h2>Шаг 2</h2>
+    <p>Заверстаем таблицу.</p>
+    <div class="step2">
+        <table>
+            <caption>Некоторые источники загрязнения хлопчато-бумажного комбината</caption>
+            <thead>
+                <tr>
+                    <th>Источник загрязнения</th>
+                    <th>Данные за год</th>
+                    <th>Суммарный выброс т/год</th>
+                    <th>Пределы изменения концентр. в-ва, мг/м³</th>
+                    <th>Вещество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Отбельный цех</td>
+                    <td rowspan="2">2006</td>
+                    <td>0,5986</td>
+                    <td>2,5—12,5</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td>0,0458</td>
+                    <td>5,5—19,6</td>
+                    <td>Серная к-та</td>
+                </tr>
+                <tr>
+                    <td>Выпарное отделение</td>
+                    <td>Среднее за 2005 и 2006</td>
+                    <td>1,4297</td>
+                    <td>36,7—52,4</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td>Красильный цех</td>
+                    <td>2006</td>
+                    <td>0,1041</td>
+                    <td>2,2—4,9</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Химстанция красильного цеха</td>
+                    <td rowspan="2">2006</td>
+                    <td>0,0233</td>
+                    <td>0—1,8</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td>0,0015</td>
+                    <td>0—0,06</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td>Промывной цех</td>
+                    <td>2006</td>
+                    <td>0,3385</td>
+                    <td>4,75-8,7</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Аппретурный цех</td>
+                    <td rowspan="2">2006</td>
+                    <td>0,2861</td>
+                    <td>1,27—10,5</td>
+                    <td>Формальдегид</td>
+                </tr>
+                <tr>
+                    <td>1,8420</td>
+                    <td>20,04—45,0</td>
+                    <td>Аммиак</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Зрельный цех</td>
+                    <td rowspan="3">2006</td>
+                    <td>0,0023</td>
+                    <td>0,4—1,2</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td>0,0072</td>
+                    <td>0—3,7</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td>3,3396</td>
+                    <td>190,0—263,0</td>
+                    <td>Органические в-ва</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Красковарко-печатный цех</td>
+                    <td rowspan="3">2006</td>
+                    <td>0,0336</td>
+                    <td>0,6—3,0</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td>0,0246</td>
+                    <td>0—5,6</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td>4,7128</td>
+                    <td>120,0—414,0</td>
+                    <td>Органические в-ва</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 3</h2>
+    <p>Убираем цвет и обводки, выравниваем ячейки по левому краю.</p>
+    <div class="step3">
+        <table>
+            <caption>Некоторые источники загрязнения хлопчато-бумажного комбината</caption>
+            <thead>
+                <tr>
+                    <th>Источник загрязнения</th>
+                    <th>Данные за год</th>
+                    <th>Суммарный выброс т/год</th>
+                    <th>Пределы изменения концентр. в-ва, мг/м³</th>
+                    <th>Вещество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Отбельный цех</td>
+                    <td rowspan="2">2006</td>
+                    <td class="ejection">0,5986</td>
+                    <td class="ranges">2,5—12,5</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0458</td>
+                    <td class="ranges">5,5—19,6</td>
+                    <td>Серная к-та</td>
+                </tr>
+                <tr>
+                    <td>Выпарное отделение</td>
+                    <td>Среднее за 2005 и 2006</td>
+                    <td class="ejection">1,4297</td>
+                    <td class="ranges">36,7—52,4</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td>Красильный цех</td>
+                    <td>2006</td>
+                    <td class="ejection">0,1041</td>
+                    <td class="ranges">2,2—4,9</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Химстанция красильного цеха</td>
+                    <td rowspan="2">2006</td>
+                    <td class="ejection">0,0233</td>
+                    <td class="ranges">0-1,8</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0015</td>
+                    <td class="ranges">0—0,06</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td>Промывной цех</td>
+                    <td>2006</td>
+                    <td class="ejection">0,3385</td>
+                    <td class="ranges">4,75—8,7</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Аппретурный цех</td>
+                    <td rowspan="2">2006</td>
+                    <td class="ejection">0,2861</td>
+                    <td class="ranges">1,27—10,5</td>
+                    <td>Формальдегид</td>
+                </tr>
+                <tr>
+                    <td class="ejection">1,8420</td>
+                    <td class="ranges">20,04—45,0</td>
+                    <td>Аммиак</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Зрельный цех</td>
+                    <td rowspan="3">2006</td>
+                    <td class="ejection">0,0023</td>
+                    <td class="ranges">0,4—1,2</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0072</td>
+                    <td class="ranges">0—3,7</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td class="ejection">3,3396</td>
+                    <td class="ranges">190,0—263,0</td>
+                    <td>Органические в-ва</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Красковарко-печатный цех</td>
+                    <td rowspan="3">2006</td>
+                    <td class="ejection">0,0336</td>
+                    <td class="ranges">0,6—3,0</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0246</td>
+                    <td class="ranges">0—5,6</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td class="ejection">4,7128</td>
+                    <td class="ranges">120,0—414,0</td>
+                    <td>Органические в-ва</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 4</h2>
+    <p>Увеличиваем заголовок таблицы, выносим за скобки источники загрязнения и год, подгоняем размер колонок.</p>
+    <div class="step4">
+        <table>
+            <colgroup>
+                <col />
+                <col width="120px" />
+                <col width="145px" />
+                <col width="200px" />
+            </colgroup>
+            <caption>Источники загрязнения хлопчато-бумажного&nbsp;комбината за 2006 год</caption>
+            <thead>
+                <tr>
+                    <th>Цех, отделение</th>
+                    <th>Суммарный выброс, <nobr>т/год</nobr></th>
+                    <th>Пределы&nbsp;изменения концентр.&nbsp;<nobr>в-ва, мг/м³</nobr></th>
+                    <th>Вещество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Отбельный</td>
+                    <td class="ejection">0,5986</td>
+                    <td class="ranges">2,5—12,5</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0458</td>
+                    <td class="ranges">5,5—19,6</td>
+                    <td>Серная к-та</td>
+                </tr>
+                <tr>
+                    <td>Выпарное
+                        <br/><small style="font-size:.65em">среднее значение за&nbsp;2005—2006</small></td>
+                    <td class="ejection">1,4297</td>
+                    <td class="ranges">36,7—52,4</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td>Красильный</td>
+                    <td class="ejection">0,1041</td>
+                    <td class="ranges">2,2—4,9</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Химстанция</td>
+                    <td class="ejection">0,0233</td>
+                    <td class="ranges">0—1,8</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0015</td>
+                    <td class="ranges">0—0,06</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td>Промывной</td>
+                    <td class="ejection">0,3385</td>
+                    <td class="ranges">4,75—8,7</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Аппретурный</td>
+                    <td class="ejection">0,2861</td>
+                    <td class="ranges">1,27—10,5</td>
+                    <td>Формальдегид</td>
+                </tr>
+                <tr>
+                    <td class="ejection">1,8420</td>
+                    <td class="ranges">20,04—45,0</td>
+                    <td>Аммиак</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Зрельный</td>
+                    <td class="ejection">0,0023</td>
+                    <td class="ranges">0,4—1,2</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0072</td>
+                    <td class="ranges">0—3,7</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td class="ejection">3,3396</td>
+                    <td class="ranges">190,0—263,0</td>
+                    <td>Органические в-ва</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Красковарко-печатный</td>
+                    <td class="ejection">0,0336</td>
+                    <td class="ranges">0,6—3,0</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0246</td>
+                    <td class="ranges">0—5,6</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td class="ejection">4,7128</td>
+                    <td class="ranges">120,0—414,0</td>
+                    <td>Органические в-ва</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <h2>Шаг 5</h2>
+    <p>Выравниваем числа для сравнения, делаем более внятные отступы между группами.</p>
+    <div class="step5">
+        <table>
+            <colgroup>
+                <col />
+                <col width="130px" />
+                <col width="145px" />
+                <col width="160px" />
+            </colgroup>
+            <caption>Источники загрязнения хлопчато-бумажного&nbsp;комбината за 2006 год</caption>
+            <thead>
+                <tr>
+                    <th>Цех, отделение</th>
+                    <th>Суммарный выброс, <nobr>т/год</nobr></th>
+                    <th>Пределы&nbsp;изменения концентр.&nbsp;<nobr>в-ва, мг/м³</nobr></th>
+                    <th>Вещество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="guild">
+                    <td rowspan="2">Отбельный</td>
+                    <td class="ejection">0,5986</td>
+                    <td class="ranges aligned-cell"><span class="left">2,5—</span>12,5</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0458</td>
+                    <td class="ranges aligned-cell"><span class="left">5,5—</span>19,6</td>
+                    <td>Серная к-та</td>
+                </tr>
+                <tr class="guild">
+                    <td>Выпарное
+                        <br/><small style="font-size:.65em">среднее значение за&nbsp;2005—2006</small></td>
+                    <td class="ejection">1,4297</td>
+                    <td class="ranges aligned-cell"><span class="left">36,7—</span>52,4</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr class="guild">
+                    <td>Красильный</td>
+                    <td class="ejection">0,1041</td>
+                    <td class="ranges aligned-cell"><span class="left">2,2—</span>4,9</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr class="guild">
+                    <td rowspan="2">Химстанция</td>
+                    <td class="ejection">0,0233</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>1,8</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0015</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>0,06</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr class="guild">
+                    <td>Промывной</td>
+                    <td class="ejection">0,3385</td>
+                    <td class="ranges aligned-cell"><span class="left">4,75—</span>8,7</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr class="guild">
+                    <td rowspan="2">Аппретурный</td>
+                    <td class="ejection">0,2861</td>
+                    <td class="ranges aligned-cell"><span class="left">1,27—</span>10,5</td>
+                    <td>Формальдегид</td>
+                </tr>
+                <tr>
+                    <td class="ejection">1,8420</td>
+                    <td class="ranges aligned-cell"><span class="left">20,04—</span>45,0</td>
+                    <td>Аммиак</td>
+                </tr>
+                <tr class="guild">
+                    <td rowspan="3">Зрельный</td>
+                    <td class="ejection">0,0023</td>
+                    <td class="ranges aligned-cell"><span class="left">0,4—</span>1,2</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0072</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>3,7</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td class="ejection">3,3396</td>
+                    <td class="ranges aligned-cell"><span class="left">190,0—</span>263,0</td>
+                    <td>Органич. в-ва</td>
+                </tr>
+                <tr class="guild">
+                    <td rowspan="3">Красковарко-печатный</td>
+                    <td class="ejection">0,0336</td>
+                    <td class="ranges aligned-cell"><span class="left">0,6—</span>3,0</td>
+                    <td>Щелочь</td>
+                </tr>
+                <tr>
+                    <td class="ejection">0,0246</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>5,6</td>
+                    <td>Уксусная к-та</td>
+                </tr>
+                <tr>
+                    <td class="ejection">4,7128</td>
+                    <td class="ranges aligned-cell"><span class="left">120,0—</span>414,0</td>
+                    <td>Органич. в-ва</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 6</h2>
+    <p>Группируем данные по веществу, а потом цеху.</p>
+    <div class="step6">
+        <table>
+            <colgroup>
+                <col width="160px" />
+                <col />
+                <col width="130px" />
+                <col width="145px" />
+            </colgroup>
+            <caption>Источники загрязнения хлопчато-бумажного&nbsp;комбината за 2006 год</caption>
+            <thead>
+                <tr>
+                    <th>Вещество</th>
+                    <th>Цех, отделение</th>
+                    <th>Суммарный выброс, <nobr>т/год</nobr></th>
+                    <th>Пределы&nbsp;изменения концентр.&nbsp;<nobr>в-ва, мг/м³</nobr></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="substance">
+                    <td>Щелочь</td>
+                    <td>Выпарное
+                        <br/><small style="font-size:.65em">среднее значение за&nbsp;2005—2006</small></td>
+                    <td class="ejection">1,4297</td>
+                    <td class="ranges aligned-cell"><span class="left">36,7—</span>52,4</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Отбельный</td>
+                    <td class="ejection">0,5986</td>
+                    <td class="ranges aligned-cell"><span class="left">2,5—</span>12,5</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Промывной</td>
+                    <td class="ejection">0,3385</td>
+                    <td class="ranges aligned-cell"><span class="left">4,75—</span>8,7</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красковарко-печатный</td>
+                    <td class="ejection">0,0336</td>
+                    <td class="ranges aligned-cell"><span class="left">0,6—</span>3,0</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красильный</td>
+                    <td class="ejection">0,1041</td>
+                    <td class="ranges aligned-cell"><span class="left">2,2—</span>4,9</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Химстанция</td>
+                    <td class="ejection">0,0233</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>1,8</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Зрельный</td>
+                    <td class="ejection">0,0023</td>
+                    <td class="ranges aligned-cell"><span class="left">0,4—</span>1,2</td>
+                </tr>
+                <tr class="substance">
+                    <td>Уксусная к-та</td>
+                    <td>Красковарко-печатный</td>
+                    <td class="ejection">0,0246</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>5,6</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Зрельный</td>
+                    <td class="ejection">0,0072</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>3,7</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Химстанция</td>
+                    <td class="ejection">0,0015</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>0,06</td>
+                </tr>
+                <tr class="substance">
+                    <td>Органич. в-ва</td>
+                    <td>Красковарко-печатный</td>
+                    <td class="ejection">4,7128</td>
+                    <td class="ranges aligned-cell"><span class="left">120,0—</span>414,0</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Зрельный</td>
+                    <td class="ejection">3,3396</td>
+                    <td class="ranges aligned-cell"><span class="left">190,0—</span>263,0</td>
+                </tr>
+                <tr class="substance">
+                    <td>Аммиак</td>
+                    <td>Аппретурный</td>
+                    <td class="ejection">1,8420</td>
+                    <td class="ranges aligned-cell"><span class="left">20,04—</span>45,0</td>
+                </tr>
+                <tr class="substance">
+                    <td>Формальдегид</td>
+                    <td>Аппретурный</td>
+                    <td class="ejection">0,2861</td>
+                    <td class="ranges aligned-cell"><span class="left">1,27—</span>10,5</td>
+                </tr>
+                <tr class="substance">
+                    <td>Серная к-та</td>
+                    <td>Отбельный</td>
+                    <td class="ejection">0,0458</td>
+                    <td class="ranges aligned-cell"><span class="left">5,5—</span>19,6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 7</h2>
+    <p>Добавим суммарный выброс по веществам, вынеся их в отдельных заголовок. Отсортируем вещества и цеха по массе выброса. Так мы сможем сравнивать и цеха и вещества по уровню загрязнения.</p>
+    <div class="step7">
+        <table>
+            <colgroup>
+                <col width="140px" />
+                <col />
+                <col width="130px" />
+                <col width="145px" />
+            </colgroup>
+            <caption>Источники загрязнения хлопчато-бумажного&nbsp;комбината за&nbsp;2006&nbsp;год</caption>
+            <thead>
+                <tr>
+                    <th>Вещество</th>
+                    <th>Цех, отделение</th>
+                    <th>Суммарный выброс, <nobr>т/год</nobr></th>
+                    <th>Пределы&nbsp;изменения концентр.&nbsp;<nobr>в-ва, мг/м³</nobr></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="substance">
+                    <td colspan="2">Органич. в-ва</td>
+                    <td colspan="2" class="ejection">8,0524</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красковарко-печатный</td>
+                    <td class="ejection">4,7128</td>
+                    <td class="ranges aligned-cell"><span class="left">120,0—</span>414,0</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Зрельный</td>
+                    <td class="ejection">3,3396</td>
+                    <td class="ranges aligned-cell"><span class="left">190,0—</span>263,0</td>
+                </tr>
+                <tr class="substance">
+                    <td colspan="2">Щелочь</td>
+                    <td colspan="2" class="ejection">2,5301</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Выпарное
+                        <br/><small style="font-size:.65em">среднее значение за&nbsp;2005—2006</small></td>
+                    <td class="ejection">1,4297</td>
+                    <td class="ranges aligned-cell"><span class="left">36,7—</span>52,4</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Отбельный</td>
+                    <td class="ejection">0,5986</td>
+                    <td class="ranges aligned-cell"><span class="left">2,5—</span>12,5</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Промывной</td>
+                    <td class="ejection">0,3385</td>
+                    <td class="ranges aligned-cell"><span class="left">4,75—</span>8,7</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красильный</td>
+                    <td class="ejection">0,1041</td>
+                    <td class="ranges aligned-cell"><span class="left">2,2—</span>4,9</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красковарко-печатный</td>
+                    <td class="ejection">0,0336</td>
+                    <td class="ranges aligned-cell"><span class="left">0,6—</span>3,0</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Химстанция</td>
+                    <td class="ejection">0,0233</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>1,8</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Зрельный</td>
+                    <td class="ejection">0,0023</td>
+                    <td class="ranges aligned-cell"><span class="left">0,4—</span>1,2</td>
+                </tr>
+                <tr class="substance">
+                    <td>Аммиак</td>
+                    <td>Аппретурный</td>
+                    <td class="ejection">1,8420</td>
+                    <td class="ranges aligned-cell"><span class="left">20,04—</span>45,0</td>
+                </tr>
+                <tr class="substance">
+                    <td>Формальдегид</td>
+                    <td>Аппретурный</td>
+                    <td class="ejection">0,2861</td>
+                    <td class="ranges aligned-cell"><span class="left">1,27—</span>10,5</td>
+                </tr>
+                <tr class="substance">
+                    <td>Серная к-та</td>
+                    <td>Отбельный</td>
+                    <td class="ejection">0,0458</td>
+                    <td class="ranges aligned-cell"><span class="left">5,5—</span>19,6</td>
+                </tr>
+                <tr class="substance">
+                    <td colspan="2">Уксусная к-та</td>
+                    <td colspan="2" class="ejection">0,0333</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красковарко-печатный</td>
+                    <td class="ejection">0,0246</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>5,6</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Зрельный</td>
+                    <td class="ejection">0,0072</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>3,7</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Химстанция</td>
+                    <td class="ejection">0,0015</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>0,06</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 8</h2>
+    <p>Подкрутим шрифты и отступы. Уберём сокращения в веществах.</p>
+    <div class="step8">
+        <table>
+            <colgroup>
+                <col width="160px" />
+                <col />
+                <col width="110px" />
+                <col width="145px" />
+            </colgroup>
+            <caption>Источники загрязнения хлопчато-бумажного&nbsp;комбината за&nbsp;2006&nbsp;год</caption>
+            <thead>
+                <tr>
+                    <th>Вещество</th>
+                    <th>Цех, отделение</th>
+                    <th>Суммарный выброс, <nobr>т/год</nobr></th>
+                    <th>Пределы&nbsp;изменения концентр.&nbsp;<nobr>в-ва, мг/м³</nobr></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="substance">
+                    <td colspan="2">Органические в-ва</td>
+                    <td colspan="2" class="ejection">8,0524</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красковарко-печатный</td>
+                    <td class="ejection">4,7128</td>
+                    <td class="ranges aligned-cell"><span class="left">120,0—</span>414,0</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Зрельный</td>
+                    <td class="ejection">3,3396</td>
+                    <td class="ranges aligned-cell"><span class="left">190,0—</span>263,0</td>
+                </tr>
+                <tr class="substance">
+                    <td colspan="2">Щелочь</td>
+                    <td colspan="2" class="ejection">2,5301</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Выпарное
+                        <br/><small style="font-size:.75em"><em>среднее значение за&nbsp;2005—2006</em></small></td>
+                    <td class="ejection">1,4297</td>
+                    <td class="ranges aligned-cell"><span class="left">36,7—</span>52,4</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Отбельный</td>
+                    <td class="ejection">0,5986</td>
+                    <td class="ranges aligned-cell"><span class="left">2,5—</span>12,5</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Промывной</td>
+                    <td class="ejection">0,3385</td>
+                    <td class="ranges aligned-cell"><span class="left">4,75—</span>8,7</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красильный</td>
+                    <td class="ejection">0,1041</td>
+                    <td class="ranges aligned-cell"><span class="left">2,2—</span>4,9</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красковарко-печатный</td>
+                    <td class="ejection">0,0336</td>
+                    <td class="ranges aligned-cell"><span class="left">0,6—</span>3,0</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Химстанция</td>
+                    <td class="ejection">0,0233</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>1,8</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Зрельный</td>
+                    <td class="ejection">0,0023</td>
+                    <td class="ranges aligned-cell"><span class="left">0,4—</span>1,2</td>
+                </tr>
+                <tr class="substance">
+                    <td>Аммиак</td>
+                    <td>Аппретурный</td>
+                    <td class="ejection">1,8420</td>
+                    <td class="ranges aligned-cell"><span class="left">20,04—</span>45,0</td>
+                </tr>
+                <tr class="substance">
+                    <td>Формальдегид</td>
+                    <td>Аппретурный</td>
+                    <td class="ejection">0,2861</td>
+                    <td class="ranges aligned-cell"><span class="left">1,27—</span>10,5</td>
+                </tr>
+                <tr class="substance">
+                    <td>Серная к-та</td>
+                    <td>Отбельный</td>
+                    <td class="ejection">0,0458</td>
+                    <td class="ranges aligned-cell"><span class="left">5,5—</span>19,6</td>
+                </tr>
+                <tr class="substance">
+                    <td colspan="2">Уксусная к-та</td>
+                    <td colspan="2" class="ejection">0,0333</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Красковарко-печатный</td>
+                    <td class="ejection">0,0246</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>5,6</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Зрельный</td>
+                    <td class="ejection">0,0072</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>3,7</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Химстанция</td>
+                    <td class="ejection">0,0015</td>
+                    <td class="ranges aligned-cell"><span class="left">0—</span>0,06</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
